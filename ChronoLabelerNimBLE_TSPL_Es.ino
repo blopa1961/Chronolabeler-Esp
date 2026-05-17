@@ -1,5 +1,5 @@
 /*********************************************************
-  Chrono Labeler BLE TSPL
+  Chrono Labeler (TSPL version)
   (c) 2026 Pablo Montoreano
 
   @file       ChronoLabelerNimBLE_TSPL_Es.ino
