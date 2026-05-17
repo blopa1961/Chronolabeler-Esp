@@ -16,3 +16,5 @@ Este aparato nació para cubrir la necesidad de fechar la comida guardada en la 
 
 ## Hardware:
 El proyecto completo está publicado [AQUI](https://www.instructables.com/CHRONO-LABELER-Dispositivo-Fechador-De-Alimentos-P/)
+English version available [HERE](https://www.instructables.com/CHRONO-LABELER-a-Food-Dating-Device-for-Bluetooth-/)
+English Github sourcecode available [HERE](https://github.com/blopa1961/Chronolabeler)
