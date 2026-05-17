@@ -15,4 +15,4 @@ La licencia de uso del presente software es PERSONAL exclusivamente, es decir, n
 Este aparato nació para cubrir la necesidad de fechar la comida guardada en la heladera o freezer.
 
 ## Hardware:
-El proyecto completo está publicado [AQUI](https://www.instructables.com/CHRONO-LABELER-a-Food-Dating-Device-for-Bluetooth-/)
+El proyecto completo está publicado [AQUI](https://www.instructables.com/CHRONO-LABELER-Dispositivo-Fechador-De-Alimentos-P/)
