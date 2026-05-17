@@ -2,11 +2,11 @@
   Chrono Labeler BLE TSPL
   (c) 2026 Pablo Montoreano
 
-  @file       ChronoLabelerNimBLE_TSPL.ino
+  @file       ChronoLabelerNimBLE_TSPL_Es.ino
   @brief      Impresora de Fecha y Hora
   @author     Pablo Montoreano
   @copyright  2026 Pablo Montoreano
-  @version    1.0 - 10/May/26
+  @version    1.0 - 17/May/26
 
   Procesador ESP32 Dev Module (opcional: ESP32 mini)
   compilar con: Arduino IDE 2.3.8 partición No OTA (2MB APP/2MB SPIFFS)
