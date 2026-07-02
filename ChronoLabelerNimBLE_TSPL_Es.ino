@@ -6,7 +6,7 @@
   @brief      Impresora de Fecha y Hora
   @author     Pablo Montoreano
   @copyright  2026 Pablo Montoreano
-  @version    1.0 - 17/May/26
+  @version    1.01 - 02/Jul/26 (agregado ESP32-C3)
 
   Procesador ESP32 Dev Module (opcional: ESP32 mini)
   compilar con: Arduino IDE 2.3.8 partición No OTA (2MB APP/2MB SPIFFS)
@@ -81,11 +81,21 @@ enum prnStates {
   STATPRINTING  // imprimiendo
 };
 
+#ifdef CONFIG_IDF_TARGET_ESP32C3  // compilacion para ESP32-C3
+ #pragma message "Compilando para ESP32-C3"
+  static const unsigned int GPIObtn=    4;  // THE BUTTON (with 10K pullup)
+  static const unsigned int GPIOblue=   5;  // LED WiFi (1K resistor)
+  static const unsigned int GPIOyellow= 6;  // LED NTP  (1K resistor)
+  static const unsigned int GPIOgreen=  7;  // LED Printing (1K resistor)
+#else // Compliacion para ESP32 Dev Module
+  #pragma message "Compilando para ESP32-DEV"
+  static const unsigned int GPIObtn=    23; // THE BUTTON (with 10K pullup)
+  static const unsigned int GPIOblue=   26; // LED WiFi (1K resistor)
+  static const unsigned int GPIOyellow= 18; // LED NTP  (1K resistor)
+  static const unsigned int GPIOgreen=  19; // LED Printing (1K resistor)
+#endif
+
 // Global definitions
-static const unsigned int GPIObtn= 23;    // EL BOTON - con pullup de 10K
-static const unsigned int GPIOblue= 26;   // LED WiFi (resistor de 1K)
-static const unsigned int GPIOyellow= 18; // LED NTP  (resistor de 1K)
-static const unsigned int GPIOgreen= 19;  // LED Impresion (resistor de 1K)
 static const unsigned int DEFAULTWIFI= WIFIAPM;  // este es el default de Wifi que se guarda en LittleFS si el archivo no existe
 static const unsigned int LEDON= HIGH;      // Estado de LED encendido
 static const unsigned int LEDOFF= LOW;      // Estado de LED apagado
